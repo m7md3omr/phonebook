@@ -7,8 +7,9 @@
 </head>
 <body>
 	<div id="app">
-		<Navbar></Navbar>
 
+		<Navbar></Navbar>
+		<Vuefooter></Vuefooter>
 	</div>
 
 <script type="text/javascript" src="{{ asset('js/app.js')}}"></script>

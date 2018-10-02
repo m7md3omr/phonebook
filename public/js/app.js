@@ -994,10 +994,14 @@ window.Vue = __webpack_require__(35);
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 var Navbar = __webpack_require__(43);
+var Vuefooter = __webpack_require__(50);
 
 var app = new Vue({
   el: '#app',
-  components: { Navbar: Navbar }
+  components: {
+    Navbar: Navbar,
+    Vuefooter: Vuefooter
+  }
 });
 
 /***/ }),
@@ -43427,15 +43431,30 @@ var staticRenderFns = [
             { staticClass: "navbar-item", attrs: { href: "https://bulma.io" } },
             [
               _c("img", {
-                attrs: {
-                  src: "https://bulma.io/images/bulma-logo.png",
-                  alt: "Bulma: a modern CSS framework based on Flexbox",
-                  width: "112",
-                  height: "28"
-                }
+                attrs: { alt: "Corexz", width: "112", height: "28" }
               })
             ]
           ),
+          _vm._v(" "),
+          _c("div", { staticClass: "navbar-menu is-active" }, [
+            _c(
+              "a",
+              {
+                staticClass: "navbar-item",
+                attrs: { href: "https://bulma.io" }
+              },
+              [_vm._v("\n\t\t\tHome\n\t\t")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "navbar-item",
+                attrs: { href: "https://bulma.io" }
+              },
+              [_vm._v("\n\t\t\tAbout\n\t\t")]
+            )
+          ]),
           _vm._v(" "),
           _c(
             "a",
@@ -43466,6 +43485,99 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-cadbadf2", module.exports)
+  }
+}
+
+/***/ }),
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(44)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(51)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/Vuefooter.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5ee36c0c", Component.options)
+  } else {
+    hotAPI.reload("data-v-5ee36c0c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { staticClass: "footer" }, [
+      _c("div", { staticClass: "content has-text-centered" }, [
+        _c("p", [
+          _c("strong", [_vm._v("Vuejs Phonebook App")]),
+          _vm._v(" by "),
+          _c("a", { attrs: { href: "https://github.com/corexz" } }, [
+            _vm._v("Mohamed Hasan")
+          ]),
+          _vm._v(". Access the  source code in\n\t\t\t"),
+          _c("a", { attrs: { href: "https://github.com/corexz/phonebook" } }, [
+            _vm._v("github")
+          ]),
+          _vm._v(". \n\t\t")
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5ee36c0c", module.exports)
   }
 }
 

@@ -18,8 +18,12 @@ window.Vue = require('vue');
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 let Navbar = require('./components/Navbar.vue');
+let Vuefooter = require('./components/Vuefooter.vue');
 
 const app = new Vue({
     el: '#app',
-    components:{Navbar}
+    components:{
+    	Navbar,
+    	Vuefooter
+    }
 });
